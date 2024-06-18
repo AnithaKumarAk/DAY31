@@ -1,0 +1,165 @@
+.my-card {
+    box-shadow: 0 2px 4px rgba(231, 192, 192, 0.5);
+    width: 35%;
+    margin: 35px;
+    display: flex;
+    height: 320px;
+  }
+  
+  .card-img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+  
+  .book-img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s ease;
+  }
+  
+  .card-img:hover,
+  .book-img:hover {
+    filter: none;
+    transform: scale(1.05);
+  }
+  
+  .text {
+    text-align: justify;
+    font-weight: 400;
+  }
+  
+  .text-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .isbn {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .dob {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .icons > * {
+    font-size: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .icons > *:hover {
+    transform: scale(1.15);
+  }
+  
+  .delete-icon,
+  .edit-icon {
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    color: rgb(22, 127, 255);
+  }
+  
+  .delete-icon {
+    color: rgb(240, 0, 0);
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .text {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-size: 12px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    .dob {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  
+    .icons > * {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1110px) {
+    .my-card {
+      width: 85%;
+      height: 200px;
+    }
+    .card-img {
+      width: 100px;
+    }
+    .text {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-size: 10px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    .dob {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  
+    .icons > * {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .my-card {
+      width: 85%;
+      height: 200px;
+    }
+    .card-img {
+      width: 100px;
+    }
+  
+    .text {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      font-size: 8px;
+    }
+    .title {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  
+    .dob {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  
+    .icons > * {
+      font-size: 10px;
+    }
+    .text-contents {
+      padding: 5px 7px 5px 7px;
+    }
+  }

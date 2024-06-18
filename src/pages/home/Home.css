@@ -1,0 +1,51 @@
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    height: 92vh;
+  }
+  section {
+    width: 95%;
+    height: 40%;
+    border-radius: 25px;
+    background-color: rgb(221, 150, 194);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 25px 25px 25px;
+  }
+  
+  .arrow {
+    font-size: 36px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .arrow:hover {
+    opacity: 0.5;
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .section-container {
+      height: auto;
+    }
+    .grid-container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .grid-container > * {
+      margin: 25px;
+    }
+  }

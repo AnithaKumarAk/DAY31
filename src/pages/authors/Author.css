@@ -1,0 +1,50 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  
+  input,
+  textarea {
+    width: 45%;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 7px;
+  }
+  input {
+    height: 35px;
+  }
+  textarea {
+    resize: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 450px) {
+    input {
+      height: 15px;
+      font-size: 12px;
+    }
+    .btn {
+      font-size: 10px;
+      padding: 7px;
+    }
+    textarea {
+      font-size: 12px;
+    }
+  }
